@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_offline"
+        android:orderInCategory="10"
+        android:title="Offline mode"
+        android:icon="@drawable/ic_signal_wifi_off_black_24dp"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/filter"
+        android:title="Filter"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/action_category"
+                android:orderInCategory="101"
+                android:title="By Category" />
+
+            <item
+                android:id="@+id/action_publisher"
+                android:orderInCategory="102"
+                android:title="By Publisher" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sort by date"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/asc"
+                android:icon="@drawable/az"
+                android:orderInCategory="103"
+                android:title="Ascending" />
+
+            <item
+                android:id="@+id/desc"
+                android:icon="@drawable/za"
+                android:orderInCategory="104"
+                android:title="Descending" />
+        </menu>
+    </item>
+
+</menu>
